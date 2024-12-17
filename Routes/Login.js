@@ -34,7 +34,19 @@ app.post('/login', async (req, res) => {
 
       // Capture the login time
       const loginTime = new Date();
-      const formattedLoginTime = loginTime.toLocaleString();
+      const day = String(loginTime.getDate()).padStart(2, '0');
+      const month = String(loginTime.getMonth() + 1).padStart(2, '0'); // Month is zero-based
+      const year = loginTime.getFullYear();
+      
+      // Format the time as hh:mm:ss
+      const hours = String(loginTime.getHours()).padStart(2, '0');
+      const minutes = String(loginTime.getMinutes()).padStart(2, '0');
+      const seconds = String(loginTime.getSeconds()).padStart(2, '0');
+      
+      // Combine the date and time
+      const formattedLoginTime = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+      
+      console.log(formattedLoginTime);
 
       // Calculate expiration time (24 hours from login time)
       // const expirationTime = new Date(loginTime.getTime() + 24 * 60 * 60 * 1000);
@@ -42,7 +54,7 @@ app.post('/login', async (req, res) => {
       const formatexp = expirationTime.toLocaleString();
 
       console.log(formatexp)
-      console.log(formattedLoginTime)
+     
 
       console.log('Token:', token);
 
