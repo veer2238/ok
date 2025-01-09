@@ -32,19 +32,19 @@ app.post('/login', async (req, res) => {
       // Generate JWT token
       const token = jwt.sign({ email }, 'secret-key', { expiresIn: '24h' });
 
-      // Capture the login time
+      
       const loginTime = new Date();
       const day = String(loginTime.getDate()).padStart(2, '0');
-      const month = String(loginTime.getMonth() + 1).padStart(2, '0'); // Month is zero-based
+      const month = String(loginTime.getMonth() + 1).padStart(2, '0'); 
       const year = loginTime.getFullYear();
       
       // Format the time as hh:mm:ss
-      const hours = String(loginTime.getHours()).padStart(2, '0');
-      const minutes = String(loginTime.getMinutes()).padStart(2, '0');
-      const seconds = String(loginTime.getSeconds()).padStart(2, '0');
+    //   const hours = String(loginTime.getHours()).padStart(2, '0');
+    //   const minutes = String(loginTime.getMinutes()).padStart(2, '0');
+    //   const seconds = String(loginTime.getSeconds()).padStart(2, '0');
       
       // Combine the date and time
-      const formattedLoginTime = `${day}/${month}/${year} ${hours}:${minutes}:${seconds}`;
+      const formattedLoginTime = `${day}/${month}/${year}`;
       
       console.log(formattedLoginTime);
 
