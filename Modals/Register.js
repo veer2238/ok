@@ -17,6 +17,12 @@ type: String,
       },
       date:{
         type:String
+      },
+
+
+      comment:{
+        type:String,
+        
       }
       
     }

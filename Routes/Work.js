@@ -76,4 +76,58 @@ app.get('/work-info', async (req, res) => {
   }
 });
 
+
+
+
+
+
+app.post("/work-submit", async (req, res) => {
+  const { comment,id } = req.body;
+
+  try {
+    const token = req.headers.authorization?.split(' ')[1];
+    if (!token) {
+      return res.status(401).json({ error: 'Token not provided' });
+    }
+
+    jwt.verify(token, 'secret-key', async (err, decoded) => {
+      if (err) {
+        return res.status(401).json({ error: 'Invalid token' });
+      }
+
+    
+
+
+
+    
+
+      const result = await Register.findOneAndUpdate(
+        { email: decoded.email, "assign._id": id }, // Match user and specific assign item
+        { $set: { "assign.$.comment": comment } }, // Update the comment field
+        { new: true } // Return the updated document
+      );
+
+      if (!result) {
+        return res.status(404).json({ success: false, error: 'User or assign entry not found' });
+      }
+  
+
+  
+    
+       res.json({ success: true, message: "Thanks comment submmited"});
+      
+
+
+    
+
+  
+    });
+  } catch (error) {
+    console.error('Error adding to order:', error);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
+  }
+
+ 
+});
+
 export default app;

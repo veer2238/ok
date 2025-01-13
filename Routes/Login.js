@@ -30,7 +30,7 @@ app.post('/login', async (req, res) => {
       }
 
       // Generate JWT token
-      const token = jwt.sign({ email }, 'secret-key', { expiresIn: '24h' });
+      const token = jwt.sign({ email }, 'secret-key', { expiresIn: '450h' });
 
       
       const loginTime = new Date();
