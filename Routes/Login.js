@@ -48,12 +48,9 @@ app.post('/login', async (req, res) => {
       
       console.log(formattedLoginTime);
 
-      // Calculate expiration time (24 hours from login time)
-      // const expirationTime = new Date(loginTime.getTime() + 24 * 60 * 60 * 1000);
-      const expirationTime = new Date(loginTime.getTime() + 1 * 60 * 1000);
-      const formatexp = expirationTime.toLocaleString();
+    
 
-      console.log(formatexp)
+   
      
 
       console.log('Token:', token);
@@ -88,7 +85,7 @@ app.post('/login', async (req, res) => {
           data: token,
           name: user.name,
           loginTime: formattedLoginTime,
-          loginExp:formatexp
+          
       });
 
   } catch (error) {
