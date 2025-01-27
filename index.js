@@ -5,6 +5,7 @@ import cors from "cors";
 import Registerb from './Routes/Register.js'
 import Loginb from './Routes/Login.js'
 import Workb from './Routes/Work.js'
+import Learning from './Routes/Api.js'
 
 app.use(express.json());
 
@@ -20,6 +21,7 @@ mongoose
 
 
   app.use('/',Registerb)
+  app.use('/',Learning)
   app.use('/',Loginb)
   app.use('/',Workb)
 

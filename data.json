@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "domain": "Mern Stack",
+        "resources": [
+            {
+                "name": "HTML",
+                "link": "https://v-extechsolution.in/learning/html/intro"
+            },
+            {
+                "name": "CSS",
+                "link": "https://v-extechsolution.in/learning/css/intro"
+            },
+            {
+                "name": "CSS-ADVANCE",
+                "link": "https://v-extechsolution.in/learning/css-advance/intro"
+            },
+            {
+                "name": "JavaScript",
+                "link": "https://v-extechsolution.in/learning/javascript/intro"
+            },
+          
+            {
+                "name": "React",
+                "link": "https://v-extechsolution.in/learning/reactjs/intro"
+            },
+          
+            {
+                "name": "Node + Express + Mongodb",
+                "link": "https://v-extechsolution.in/learning/express-js/intro"
+            }
+           
+        ]
+    },
+    {
+        "id": 2,
+        "domain": "Data Analysis",
+        "resources": [
+            {
+                "name": "Python",
+                "link": "https://v-extechsolution.in/learning/python/intro"
+            },
+            {
+                "name": "SQL",
+                "link": "https://v-extechsolution.in/learning/sql/intro"
+            },
+            {
+                "name": "Excel",
+                "link": "https://v-extechsolution.in/learning/excel/intro"
+            },
+            {
+                "name": "Power Bi",
+                "link": "https://publuu.com/flip-book/780619/1728001"
+            }
+
+        ]
+    }
+]

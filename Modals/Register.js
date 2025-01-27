@@ -5,6 +5,19 @@ const registerSchema = new mongoose.Schema({
 
   email: { type: String, required: true, unique: true},
   password: { type: String, required: true},
+
+  details:
+    {
+      dob:{
+        type: Number,
+        
+      },
+      dob:{
+        type: Number,
+       
+      }
+    },
+
  
   createdAt: { type: Date, default: Date.now },
 
