@@ -33,6 +33,32 @@ app.post("/register", async (req, res) => {
   }
 });
 
+app.get("/register-domain", async (req, res) => {
+  const email = 'parantapkaptan@gmail.com';
+  // const domain1 = 'mern stack';
+  const domain1 = 'cyber security';
+  // const domain1 = 'ML/AI';
+  // const domain1 = 'python';
+  // const domain1 = 'data analysis'; 
+
+  try {
+    const user = await Register.findOne({ email });
+
+    if (!user) {
+      return res.status(404).json({ success: false, message: "User not found" });
+    }
+
+    user.domain = domain1;
+    await user.save();
+
+    res.status(201).json({ success: true, message: `${email}Thanks, registration successful` });
+  } catch (error) {
+    console.error("Error during registration:", error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+
 app.get("/register-info", async (req, res) => {
  
 

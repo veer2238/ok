@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "domain": "Mern Stack",
+        "domain": "mern stack",
         "resources": [
             {
                 "name": "HTML",
@@ -19,22 +19,19 @@
                 "name": "JavaScript",
                 "link": "https://v-extechsolution.in/learning/javascript/intro"
             },
-          
             {
                 "name": "React",
                 "link": "https://v-extechsolution.in/learning/reactjs/intro"
             },
-          
             {
                 "name": "Node + Express + Mongodb",
                 "link": "https://v-extechsolution.in/learning/express-js/intro"
             }
-           
         ]
     },
     {
         "id": 2,
-        "domain": "Data Analysis",
+        "domain": "data analysis",
         "resources": [
             {
                 "name": "Python",
@@ -52,7 +49,76 @@
                 "name": "Power Bi",
                 "link": "https://publuu.com/flip-book/780619/1728001"
             }
-
+        ]
+    },
+    {
+        "id": 3,
+        "domain": "python",
+        "resources": [
+            {
+                "name": "Object-Oriented Programming",
+                "link": "https://v-extechsolution.in/learning/python/oop"
+            },
+            {
+                "name": "Modules and Packages",
+                "link": "https://v-extechsolution.in/learning/python/modules"
+            },
+            {
+                "name": "File Handling",
+                "link": "https://v-extechsolution.in/learning/python/file-handling"
+            },
+            {
+                "name": "Decorators",
+                "link": "https://v-extechsolution.in/learning/python/decorators"
+            },
+            {
+                "name": "Generators",
+                "link": "https://v-extechsolution.in/learning/python/generators"
+            },
+            {
+                "name": "Advanced Data Structures",
+                "link": "https://v-extechsolution.in/learning/python/data-structures"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "domain": "cyber security",
+        "resources": [
+            {
+                "name": "Introduction to Cybersecurity",
+                "link": "https://v-extechsolution.in/learning/cybersecurity/intro"
+            },
+            {
+                "name": "Network Security",
+                "link": "https://v-extechsolution.in/learning/cybersecurity/network-security"
+            },
+            {
+                "name": "Ethical Hacking",
+                "link": "https://v-extechsolution.in/learning/cybersecurity/ethical-hacking"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "domain": "ML/AI",
+        "resources": [
+            {
+                "name": "Machine Learning Basics",
+                "link": "https://v-extechsolution.in/learning/ai-ml/ml-basics"
+            },
+            {
+                "name": "Deep Learning",
+                "link": "https://v-extechsolution.in/learning/ai-ml/deep-learning"
+            },
+            {
+                "name": "Natural Language Processing",
+                "link": "https://v-extechsolution.in/learning/ai-ml/nlp"
+            },
+            {
+                "name": "AI Frameworks (TensorFlow & PyTorch)",
+                "link": "https://v-extechsolution.in/learning/ai-ml/frameworks"
+            }
         ]
     }
 ]

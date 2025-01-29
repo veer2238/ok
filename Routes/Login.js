@@ -85,6 +85,7 @@ app.post('/login', async (req, res) => {
           data: token,
           name: user.name,
           loginTime: formattedLoginTime,
+          domain: user.domain
           
       });
 
