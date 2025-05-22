@@ -108,23 +108,23 @@
         "resources": [
             {
                 "name": "Introduction to Cybersecurity",
-                "link": "https://v-extechsolution.in/learning/cybersecurity/intro"
+                "link": "https://v-extechsolution.in/learning/cyber-security/intro"
             },
             {
                 "name": "Network Security",
-                "link": "https://v-extechsolution.in/learning/cybersecurity/network-security"
+                "link": "https://v-extechsolution.in/learning/cyber-security/cyber-dark-web"
             },
             {
                 "name": "Ethical Hacking",
-                "link": "https://v-extechsolution.in/learning/cybersecurity/ethical-hacking"
+                "link": "https://v-extechsolution.in/learning/cyber-security/cyber-network"
             },
             {
                 "name": "Penetration Testing",
-                "link": "https://v-extechsolution.in/learning/cybersecurity/penetration-testing"
+                "link": "https://v-extechsolution.in/learning/cyber-security/text-encryption"
             },
             {
                 "name": "Cyber Security Project",
-                "link": "https://v-extechsolution.in/learning/cybersecurity/project"
+                "link": "https://v-extechsolution.in/learning/cyber-security/cyber%20tools"
             }
         ]
     },
@@ -171,21 +171,14 @@
                 "link": "https://v-extechsolution.in/learning/javascript/intro"
             },
             {
-                "name": "Frontend Framework (React, Vue, Angular)",
-                "link": "https://v-extechsolution.in/learning/frontend-frameworks/intro"
+                "name": "Frontend Framework (React.js)",
+                "link": "https://v-extechsolution.in/learning/reactjs/intro"
             },
             {
-                "name": "Backend Development (Node.js, Django, Flask)",
-                "link": "https://v-extechsolution.in/learning/backend/intro"
+                "name": "Backend Development (Node.js & Express.js)",
+                "link": "https://v-extechsolution.in/learning/express-js/intro"
             },
-            {
-                "name": "Database Management (SQL & NoSQL)",
-                "link": "https://v-extechsolution.in/learning/database/intro"
-            },
-            {
-                "name": "Authentication & Security",
-                "link": "https://v-extechsolution.in/learning/auth-security/intro"
-            },
+          
             {
                 "name": "Cloud Deployment (AWS, Firebase, Heroku)",
                 "link": "https://v-extechsolution.in/learning/cloud-deployment/intro"

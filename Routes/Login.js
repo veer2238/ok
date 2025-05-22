@@ -56,28 +56,28 @@ app.post('/login', async (req, res) => {
       console.log('Token:', token);
 
       // Send notification email
-      const transporter = nodemailer.createTransport({
-          service: "gmail",
-          auth: {
-              user: process.env.EMAIL_USER,
-              pass: process.env.EMAIL_PASS,
-          },
-      });
+    //   const transporter = nodemailer.createTransport({
+    //       service: "gmail",
+    //       auth: {
+    //           user: process.env.EMAIL_USER,
+    //           pass: process.env.EMAIL_PASS,
+    //       },
+    //   });
 
-      const info = await transporter.sendMail({
-          from: process.env.EMAIL_USER,
-          to: process.env.EMAIL_USER1,
-          subject: "New Login Notification",
-          html: `
-              <div>
-                  <h2>${user.name},</h2>
-                  <p>Logged in at: ${formattedLoginTime}</p>
+    //   const info = await transporter.sendMail({
+    //       from: process.env.EMAIL_USER,
+    //       to: process.env.EMAIL_USER1,
+    //       subject: "New Login Notification",
+    //       html: `
+    //           <div>
+    //               <h2>${user.name},</h2>
+    //               <p>Logged in at: ${formattedLoginTime}</p>
                  
-              </div>
-          `,
-      });
+    //           </div>
+    //       `,
+    //   });
 
-      console.log("Message sent:", info.messageId);
+    //   console.log("Message sent:", info.messageId);
 
       // Respond with success, token, and times
       res.json({
