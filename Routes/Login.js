@@ -38,12 +38,6 @@ app.post('/login', async (req, res) => {
       const month = String(loginTime.getMonth() + 1).padStart(2, '0'); 
       const year = loginTime.getFullYear();
       
-      // Format the time as hh:mm:ss
-    //   const hours = String(loginTime.getHours()).padStart(2, '0');
-    //   const minutes = String(loginTime.getMinutes()).padStart(2, '0');
-    //   const seconds = String(loginTime.getSeconds()).padStart(2, '0');
-      
-      // Combine the date and time
       const formattedLoginTime = `${day}/${month}/${year}`;
       
       console.log(formattedLoginTime);
@@ -55,31 +49,6 @@ app.post('/login', async (req, res) => {
 
       console.log('Token:', token);
 
-      // Send notification email
-    //   const transporter = nodemailer.createTransport({
-    //       service: "gmail",
-    //       auth: {
-    //           user: process.env.EMAIL_USER,
-    //           pass: process.env.EMAIL_PASS,
-    //       },
-    //   });
-
-    //   const info = await transporter.sendMail({
-    //       from: process.env.EMAIL_USER,
-    //       to: process.env.EMAIL_USER1,
-    //       subject: "New Login Notification",
-    //       html: `
-    //           <div>
-    //               <h2>${user.name},</h2>
-    //               <p>Logged in at: ${formattedLoginTime}</p>
-                 
-    //           </div>
-    //       `,
-    //   });
-
-    //   console.log("Message sent:", info.messageId);
-
-      // Respond with success, token, and times
       res.json({
           success: true,
           data: token,
